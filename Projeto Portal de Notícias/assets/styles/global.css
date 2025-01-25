@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+    --bg-color: #0F172A;
+    --stroke-color: #1E293B;
+    --text-color-primary: #F1F5F9;
+    --text-color-secondary: #CBD5E1;
+
+    --font-family: "Archivo", sans-serif;
+    --font-heading1: 800 2.4rem/135% var(--font-family);
+    --font-heading2: 800 1.6rem/140% var(--font-family);
+    --font-heading3: 800 1.4rem/140% var(--font-family);
+    --font-span: 600 1.4rem/145% var(--font-family);
+    --font-paragraph: 1.4rem/160% var(--font-family);
+    --font: 400 1.6rem/140% var(--font-family);
+    --font-label: 500 1rem/120% var(--font-family);
+    --font-logo: 900 1.5rem/150% var(--font-family);
+}
+
+body {
+    font: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    margin: auto;
+    max-width: 128rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--brand-color-light);
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    background-color: var(--brand-color-light);
+    padding: .7rem;
+    color: var(--text-color-primary);
+    font: var(--font-span);
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.content-tag {
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    color: var(--text-color-primary);
+    font: var(--font-label);
+    padding: .4rem .8rem;
+    border-radius: .4rem;
+    width: fit-content;
+    text-transform: uppercase;
+    box-shadow: 0px .4rem 1.6rem #02061740;
+}
