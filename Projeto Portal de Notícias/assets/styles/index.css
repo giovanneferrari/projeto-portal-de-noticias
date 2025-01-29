@@ -205,7 +205,7 @@
         }
 
         .secondary-section-infos-arrow:hover {
-
+            cursor: pointer;
             p {
                 color: var(--brand-color-light);
             }
@@ -326,6 +326,7 @@
                     }
         
                     .highlight-titles-arrow:hover {
+                        cursor: pointer;
                         p {
                             color: var(--brand-color-light);
                         }
@@ -402,7 +403,21 @@
             
                         .more-news-infos-arrow {
                             display: flex;
+                            align-items: center;
                             gap: 8px;
+                        }
+
+                        .more-news-infos-arrow:hover {
+                            cursor: pointer;
+                            p {
+                                color: var(--brand-color-light);
+                            }
+                
+                            svg {
+                                path {
+                                    fill: var(--brand-color-light);
+                                }
+                            }
                         }
                     }
                 }
@@ -450,6 +465,10 @@
                         }
                     }
                 }
+            }
+
+            aside > img {
+                border-radius: .8rem;
             }
         }
 
